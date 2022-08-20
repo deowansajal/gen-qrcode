@@ -3,10 +3,18 @@ import PageSubTitle from '@/components/PageSubTitle'
 import PageTitle from '@/components/PageTitle'
 import QRCodeImage from '@/components/QRCodeImage'
 import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const HomePage: NextPage = () => {
     return (
         <div className="max-w-2xl mx-auto">
+            <Head>
+                <title>Generate QR Code</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+            </Head>
             <PageTitle>
                 <span>Generate and Publish</span>
                 <br />
